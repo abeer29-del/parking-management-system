@@ -3,9 +3,9 @@
 A web-based parking management system with a Python FastAPI backend and an HTML, CSS and JavaScript frontend.
 
 ## Features
-- [View available parking slots]
-- [Register vehicle entry and exit]
-- [Calculate parking fees]
+- View available parking slots
+- Register vehicle entry and exit
+- Calculate parking fees
 
 ## Tech Stack
 - **Backend:** Python, FastAPI, Pydantic, Uvicorn
