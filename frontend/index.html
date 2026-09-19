@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Parking Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Parking Management System</h1>
+
+
+        <!-- Park Vehicle -->
+
+        <div class="card">
+
+            <h2>🚗 Park Vehicle</h2>
+
+            <form id="parkingForm">
+
+                <label for="vehicleNumber">
+                    Vehicle Number
+                </label>
+
+                <input
+                    type="text"
+                    id="vehicleNumber"
+                    placeholder="Enter vehicle number"
+                    required
+                >
+
+
+                <label for="vehicleType">
+                    Vehicle Type
+                </label>
+
+                <select id="vehicleType" required>
+
+                    <option value="">
+                        Select Vehicle Type
+                    </option>
+
+                    <option value="Car">
+                        Car
+                    </option>
+
+                    <option value="Bike">
+                        Bike
+                    </option>
+
+                </select>
+
+
+                <label for="hours">
+                    Parking Hours
+                </label>
+
+                <input
+                    type="number"
+                    id="hours"
+                    placeholder="Enter parking hours"
+                    min="1"
+                    required
+                >
+
+
+                <button type="submit">
+                    Park Vehicle
+                </button>
+
+            </form>
+
+
+            <div id="result"></div>
+
+        </div>
+
+
+        <!-- Get Vehicle -->
+
+        <div class="card">
+
+            <h2>🔑 Get Vehicle</h2>
+
+            <!-- Check Vehicle Fee -->
+
+            <form id="getVehicleForm">
+
+                <label for="getVehicleNumber">
+                    Vehicle Number
+                </label>
+
+                <input
+                    type="text"
+                    id="getVehicleNumber"
+                    placeholder="Enter vehicle number"
+                    required
+                >
+
+
+                <button
+                    type="button"
+                    id="checkFeeBtn"
+                >
+                    Check Fee
+                </button>
+
+            </form>
+
+
+            <!-- Vehicle Fee Information -->
+
+            <div
+                id="feeResult"
+                class="fee-result"
+            ></div>
+
+
+            <!-- Payment Section -->
+
+            <div
+                id="paymentSection"
+                class="payment-section"
+            >
+
+                <label for="payment">
+                    Payment Amount
+                </label>
+
+                <input
+                    type="number"
+                    id="payment"
+                    placeholder="Enter payment amount"
+                    min="0"
+                >
+
+
+                <button
+                    type="button"
+                    id="getVehicleBtn"
+                >
+                    Get Vehicle
+                </button>
+
+            </div>
+
+
+            <div id="getVehicleResult"></div>
+
+        </div>
+
+
+        <!-- View Parked Vehicles -->
+
+        <div class="card">
+
+            <h2>🅿️ Parked Vehicles</h2>
+
+            <button id="viewVehiclesBtn">
+                View Parked Vehicles
+            </button>
+
+
+            <div id="vehiclesResult"></div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

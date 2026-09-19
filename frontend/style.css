@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+    padding: 40px 20px;
+}
+
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 35px;
+    color: #1f2937;
+    font-size: 36px;
+}
+
+
+.card {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+h2 {
+    margin-bottom: 25px;
+    color: #374151;
+    font-size: 24px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #374151;
+}
+
+
+input,
+select {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 20px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+
+input:focus,
+select:focus {
+    border-color: #2563eb;
+}
+
+
+button {
+    padding: 13px 22px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+button:hover {
+    background: #1d4ed8;
+}
+
+
+#result,
+#getVehicleResult {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+#vehiclesResult {
+    margin-top: 20px;
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+.fee-result {
+    display: none;
+    margin-top: 20px;
+    padding: 18px;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 8px;
+}
+
+
+.fee-result.show {
+    display: block;
+}
+
+
+.fee-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #1e3a8a;
+}
+
+
+.fee-amount {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+
+.payment-section {
+    display: none;
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px solid #e5e7eb;
+}
+
+
+.payment-section.show {
+    display: block;
+}
+
+
+.success-message {
+    margin-top: 20px;
+    padding: 18px;
+    background: #ecfdf5;
+    border: 1px solid #a7f3d0;
+    border-radius: 8px;
+    color: #065f46;
+}
+
+
+.error-message {
+    margin-top: 20px;
+    padding: 18px;
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    color: #991b1b;
+}
+
+
+.cashback {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.vehicle-card {
+    padding: 15px;
+    margin-bottom: 12px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+}
+
+
+.vehicle-card p {
+    margin-bottom: 6px;
+}
+
+
+hr {
+    display: none;
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 15px;
+    }
+
+
+    h1 {
+        font-size: 28px;
+    }
+
+
+    .card {
+        padding: 20px;
+    }
+
+
+    h2 {
+        font-size: 21px;
+    }
+
+
+    button {
+        width: 100%;
+    }
+
+}
